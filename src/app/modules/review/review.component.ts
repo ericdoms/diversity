@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./review.component.scss']
 })
 export class ReviewComponent implements OnInit {
-
-  constructor() { }
+  isShow: boolean;
+  constructor() { 
+    this.isShow = false;
+  }
 
   ngOnInit() {
   }
-
+  toggleMenu(action) {
+    if (action === 'show') {
+      //window.addEventListener('scroll', noScroll);
+      this.isShow = true;
+    } else {
+      //window.removeEventListener('scroll', noScroll);
+      this.isShow = false;
+    }
+  }
 }
