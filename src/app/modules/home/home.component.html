@@ -1,0 +1,70 @@
+<div id="home-wrapper" class="wrapper">
+    <section id="landing">
+        <app-header (menu)="toggleMenu($event)"></app-header>
+        <div class="section-background"></div>
+        <div class="home-content-container">
+            <div class="welcome-text-container">
+                <p class="welcome-text">Welcome to</p>
+                <div class="logo-container">
+                    <img class="logo" src="../../../assets/images/home/logo.png" />
+                    <label>by community corporate</label>
+                </div>  
+            </div>
+            <p>The first step to finding work in Australia.</p>
+            <div class="btn-container">
+                <a routerLink="/notification" routerLinkActive="active" class="login-btn btn">Log in</a>
+                <a routerLink="/crisis-center" routerLinkActive="active" class="join-btn btn">Join now</a>
+            </div>
+        </div>
+    </section>
+    <div *ngIf="isShow">
+        <app-menu (menu)="toggleMenu($event)"></app-menu>
+    </div>
+    <section id="what-we-do-container">
+        <h1>What we do </h1>
+        <p>Building on our extensive working relationships with federal and state governments, and the community sector, we custom build training and recruitment programs to respond to your workforce needs.</p>
+    </section>
+    <section id="how-it-works-container">
+        <h1>How it works</h1>
+        <ul>
+            <li>
+                <div class="number">01</div>
+                <p>Develop funded employer-directed pre-employment training programs.</p>
+            </li>
+            <li>
+                <div class="number">02</div>
+                <p>Leverage from their supply chain and purchasing power.</p>
+            </li>
+            <li>
+                <div class="number">03</div>
+                <p>Facilitate strategic community partnerships and initiatives.</p>
+            </li>
+        </ul>
+    </section>
+    <section id="contact-us-container">
+        <h1>Contact us</h1>
+        <div class="contact-detail">
+            0481 386 743<br>
+            Office (Monday - Friday 9am - 5pm)
+        </div>
+        <div class="contact-detail email">
+            Info@communitycorporate.com.au
+        </div>
+        <div class="find-us-container">
+            <h2>Find us on</h2>
+            <div class="socials-container">
+                <div><a href=""><img src="../../../assets/images/home/linkedin.svg"></a></div>
+                <div><a href=""><img src="../../../assets/images/home/facebook.svg"></a></div>
+                <div>or</div>
+            </div>
+        </div>
+        <div class="send-btn btn">Send us a message</div>
+    </section>
+    <section id="footer-logo-container">
+        <div>
+            <img src="../../../assets/images/home/logo.png">
+            <span>by community corporate</span>
+        </div>
+    </section>
+    x
+</div>

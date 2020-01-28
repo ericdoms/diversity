@@ -1,0 +1,55 @@
+@import 'src/assets/scss/theme.scss';
+
+#header-container{
+    padding: 50px 20px;
+    background-color: transparent;
+
+    div{
+        display: inline-block;
+        float: left;
+        width: 50%;
+
+        &:first-child{
+            text-align: left;
+            
+            div{
+                font-family: $FONT-FAMILY-BOLD;
+                text-transform: uppercase;
+                font-size: 11px;
+                cursor: pointer;
+                width: auto;
+                color: $white;
+
+                span{
+                    display: block;
+                    height: 3px;
+                    width: 30px;
+                    background-color: $white;
+                    margin-bottom: 5px;
+                    pointer-events: none;
+                }
+            }
+
+            .menuHeader{
+                font-size: 20px;
+                color: $black;
+                text-transform: capitalize;
+                font-family: $FONT-FAMILY-REGULAR;
+            }
+        }
+
+        &:last-child{
+            div{
+                text-align: right;
+                float: right;
+                width: 100%;
+
+                div{
+                    width: 30px;
+                    height: 30px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

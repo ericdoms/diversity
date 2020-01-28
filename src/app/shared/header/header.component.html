@@ -1,0 +1,22 @@
+<div id="header-container">
+    <div class="menu-container">
+        <div *ngIf="isMenu" class="menu" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            menu
+        </div>
+        <div *ngIf="!isMenu" class="menuHeader">
+            {{menuHeader}}
+        </div>
+    </div>
+    <div>
+        <div *ngIf="isLoggedIn">
+            <div class="notification-container">
+                <img src="../../../assets/images/header/notification-light.svg" />
+            </div>
+            <div class="message-container">
+                <img src="../../../assets/images/header/message.svg" />
+            </div>
+        </div>
+    </div>
+</div>

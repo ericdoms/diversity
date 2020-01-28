@@ -1,0 +1,206 @@
+@import 'src/assets/scss/theme.scss';
+
+section{
+    padding: 50px 20px;
+
+    &:first-child{
+        padding: 0;
+    }
+}
+
+#landing{
+    height: 690px;
+    position: relative;
+    color: $white;
+
+    .section-background{
+        background-image: url('../../../assets/images/home/landing.jpg');
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .section-background:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+
+    .home-content-container{
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+
+        .welcome-text{
+            color: $white;
+            font-family: $FONT-FAMILY-BOLD;
+            font-size: 43px;
+            margin: 0;
+        }
+
+        .logo-container{
+            position: relative;
+            margin-top: -15px;
+
+            img{
+                display: block;
+                width: 80%;
+                margin: auto;
+            }
+
+            label{
+                font-size: 9px;
+                text-align: right;
+                width: 100%;
+                color: $white;
+                font-family: $FONT-FAMILY-REGULAR;
+                position: absolute;
+                right: 24%;
+                bottom: 0;
+            }
+        }
+
+        p{
+            margin-top: 25px;
+        }
+
+        .btn-container{
+            margin: 95px auto 0 auto;
+            max-width: 335px;
+
+            a{
+                margin-bottom: 10px;
+                display: block;
+            }
+
+            .join-btn{
+                background-color: $bluish;
+            }
+        }
+    }
+}
+
+#what-we-do-container{
+    margin: 0;
+
+    p{
+        color: $grey;
+        line-height: 1.5;
+    }
+}
+
+#how-it-works-container{
+    background-color: $bluish;
+    background-image: url(../../../assets/images/diversity_bg.png);
+    color: $white;
+
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li{
+            padding: 30px 0;
+            border-bottom: 1px solid $white;
+
+            &:first-child{
+                padding-top: 0;
+            }
+
+            &:last-child{
+                border-bottom: none;
+            }
+
+            .number{
+                font-size: 50px;
+                font-family: $FONT-FAMILY-BOLD;
+            }
+    
+            p{
+                margin: 0;
+                line-height: 1.5;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+#contact-us-container{
+    .contact-detail{
+        background-image: url(../../../assets/images/home/phone.svg);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 0 5px;
+        padding: 0 0 0 35px;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .email{
+        background-image: url(../../../assets/images/home/mail.svg);
+    }
+
+    .find-us-container{
+        padding-left: 35px;
+
+        h2{
+            font-size: 18px;
+            font-family: $FONT-FAMILY-BOLD;
+        }
+
+        .socials-container{
+            div{
+                display: inline-block;
+                margin-right: 5px;
+                width: 25px;
+                height: 25px;
+
+                &:last-child{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .send-btn{
+        background-color: $bluish;
+        margin-top: 30px;
+    }
+}
+
+#footer-logo-container{
+    padding-top: 0;
+
+    div{
+        max-width: 200px;
+        margin: auto;
+        position: relative;
+
+        span{
+            position: absolute;
+            font-size: 6px;
+            bottom: 5px;
+            right: 32px;
+        }
+    }
+}
+
+h1{
+    font-size: 36px;
+    font-family: $FONT-FAMILY-BOLD;
+}

@@ -1,0 +1,24 @@
+@import 'src/assets/scss/theme.scss';
+
+#skill-profile-form-container{
+    background-color: $purple;
+    background-image: url(../../../assets/images/purple_bg.png);
+    section{
+        padding: 20px;
+
+        .skill-profile-form-content{
+            text-align: center;
+
+            h2{
+                font-size: 15px;
+                color: $purple;
+                font-family: $FONT-FAMILY-REGULAR;
+                margin-bottom: 20px;
+            }
+
+            form{
+                margin-top: 50px;
+            }
+        }
+    }
+}

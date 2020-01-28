@@ -1,0 +1,120 @@
+@import 'src/assets/scss/theme.scss';
+
+#appointment-list-container{
+
+    background-image: url(../../../assets/images/generic_diversity_bg.png);
+    .inner-container{
+        background-color: $lightest-blue;
+    }
+
+    .top-padding-container{
+        padding: 20px 15px 0 15px;
+
+        .search-container{
+            margin-top: 20px;
+
+            input{
+                border: 1px solid $border-grey;
+                width: 100%;
+                padding: 15px 30px 15px 40px;
+                box-sizing: border-box;
+                border-radius: 10px;
+                background-image: url(../../../assets/images/appointment/search.svg);
+                background-size: 18px;
+                background-position: center left 15px;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    .appointment-list{
+        margin-top: 30px;
+
+        .appointment-list-bullet{
+            margin-top: 10px;
+
+            .date{
+                padding: 0 15px;
+                font-size: 12px;
+                font-family: $FONT-FAMILY-BOLD;
+                margin-bottom: 10px;
+                color: $grey;
+            }
+    
+            .appointment-box{
+                background-color: $white;
+    
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    border-bottom: 1px solid $border-grey;
+
+                    &:first-child{
+                        border-top: 1px solid $border-grey;
+                    }
+    
+                    li{
+                        display: inline-block;
+                        padding: 5px 0;
+                        box-sizing: border-box;
+    
+                        .detail-container{
+                            padding: 15px;
+                            
+                            div{
+                                margin-bottom: 5px;
+    
+                                &:first-child{
+                                    font-family: $FONT-FAMILY-BOLD;
+                                }
+    
+                                &:last-child{
+                                    margin: 0;
+                                }
+                            }
+    
+                            .time{
+                                font-size: 13px;
+                            }
+    
+                            .status,
+                            .address{
+                                font-size: 14px;
+                            }
+    
+                            .address{
+                                color: $lightest-grey;
+                            }
+    
+                            .title{
+                                font-size: 16px;
+                            }
+    
+                            .pending{
+                                color: $pending-red;
+                            }
+                        }
+    
+                        .withBorder{
+                            border-right: 1px solid $bluish;
+                            box-sizing: border-box;
+                        }
+
+                        .pending-tab{
+                            border-right: 1px solid $pending-red;
+                        }   
+    
+                        &:first-child{
+                            width: 25%;
+                        }
+    
+                        &:last-child{
+                            width: 75%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

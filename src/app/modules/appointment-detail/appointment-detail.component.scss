@@ -1,0 +1,72 @@
+@import 'src/assets/scss/theme.scss';
+
+#appointment-detail-container{
+
+    background-image: url(../../../assets/images/generic_diversity_bg.png);
+    h1{
+        font-size: 25px;
+        color: $grey;
+        margin: 20px 0;
+        font-family: $FONT-FAMILY-BOLD;
+    }
+
+    .details{
+        border-top: 1px solid $border-grey;
+        border-bottom: 1px solid $border-grey;
+
+        p{
+            font-size: 16px;
+            position: relative;
+
+            &:before{
+                content: '';
+                width: 15px;
+                height: 15px;
+                background-image: url(../../../assets/images/position-details/location.svg);
+                padding-left: 30px;
+                background-repeat: no-repeat
+            }
+        }
+
+        .time{
+            &:before{
+                background-image: url(../../../assets/images/position-details/clock.svg);
+            }
+        }
+
+        .schedule{
+            color: $bluish;
+
+            &:before{
+                background-image: url(../../../assets/images/appointment/calendar.svg);
+            }
+        }
+    }
+
+    .notes{
+        h2{
+            font-family: $FONT-FAMILY-BOLD;
+            font-size: 18px;
+        }
+
+        p{
+            line-height: 1.5;
+            color: $grey;
+            font-size: 16px;
+        }
+    }
+
+    .action-btns{
+        margin: 0 0 20px 0;
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        div{
+            margin: 0 10px;
+
+            a{
+                color: $bluish;
+            }
+        }
+    }
+}

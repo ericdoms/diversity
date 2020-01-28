@@ -1,0 +1,65 @@
+<div id="profile-container">
+    <app-header (menu)="toggleMenu($event)"></app-header>
+    <section id="wb-text-container">
+        <div class="wb-test-details">
+            <p class="date">TUES, DECEMBER 23</p>
+            <p>Welcome Back</p>
+            <p>Enrico Domingo</p>
+        </div>
+    </section>
+    <section id="notification-container">
+        <div class="notif-detail-box-container">
+            <div class="notif-detail-box urgent">
+                <div class="notif-header">
+                    Urgent Action
+                </div>
+                <div class="notif-content">
+                    <p>Please complete your skills profile to be eligible for employment offers.</p>
+                </div>
+            </div>
+        </div>
+        <div class="daily-notifs-container">
+            <h2>Notifications</h2>
+            <div class="daily-notif-content-container">
+                <div class="notif-detail-box daily-notif">
+                    <div class="notif-content">
+                        <h3>Appointment Invite</h3>
+                        <label>Today, 7.08pm</label>
+                        <p>You have been invited to apply for a cashier position.</p>
+                        <div class="action-badge">Action</div>
+                    </div>
+                </div>
+                <div class="notif-detail-box daily-notif noAction">
+                    <div class="notif-content">
+                        <h3>New vacancy</h3>
+                        <label>Today, 7.08pm</label>
+                        <p>You have been invited to apply for a cashier position.</p>
+                    </div>
+                </div>
+                <div class="prev-date-notif-container">
+                    <h4>NOVEMBER 12</h4>
+                    <div class="notif-detail-box daily-notif">
+                        <div class="notif-content">
+                            <h3>Appointment Invite</h3>
+                            <label>Today, 7.08pm</label>
+                            <p>You have been invited to apply for a cashier position.</p>
+                        </div>
+                    </div>
+                    <div class="notif-detail-box daily-notif noAction">
+                        <div class="notif-content">
+                            <h3>New vacancy</h3>
+                            <label>Today, 7.08pm</label>
+                            <p>You have been invited to apply for a cashier position.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notif-end">
+                There are no more notifications
+            </div>
+        </div>
+    </section>
+    <div *ngIf="isShow">
+        <app-menu (menu)="toggleMenu($event)"></app-menu>
+    </div>
+</div>

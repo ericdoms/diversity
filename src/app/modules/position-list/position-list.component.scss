@@ -1,0 +1,72 @@
+@import 'src/assets/scss/theme.scss';
+
+#position-list-container{
+    // background-color: $yellow;
+    background-image: url(../../../assets/images/yellow_bg.png);
+    .inner-container{
+        padding: 20px;
+
+        .position-list-content{
+            margin: 20px 0 0 0;
+
+            .list-box{
+                position: relative;
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                background-image: url(../../../assets/images/position-details/next.svg);
+                background-repeat: no-repeat;
+                background-size: 25px;
+                background-position: bottom 20px right 20px;
+                margin-bottom: 50px;
+
+                &:last-child{
+                    margin-bottom: 20px;
+                }
+
+                .company-logo{
+                    max-width: 50px;
+                    max-height: 50px;
+                    margin-bottom: 40px;
+                }
+
+                .company-name{
+                    color: $bluish-darker;
+                    font-family: $FONT-FAMILY-BOLD;
+                }
+
+                .position-title{
+                    font-size: 24px;
+                    color: $grey;
+                    font-family: $FONT-FAMILY-BOLD;
+                    margin: 0;
+                }
+
+                .date{
+                    margin: 5px 0 10px 0;
+                }
+
+                .short-description{
+                    line-height: 1.5;
+                    color: $grey;
+                    font-size: 16px;
+                }
+
+                .status{
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+
+                    .applied{
+                        text-transform: uppercase;
+                        color: $white;
+                        background-color: $dark-grey;
+                        padding: 5px 10px;
+                        font-family: $FONT-FAMILY-BOLD;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

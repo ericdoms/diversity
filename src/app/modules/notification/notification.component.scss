@@ -1,0 +1,173 @@
+@import 'src/assets/scss/theme.scss';
+
+#profile-container{
+    background-color: $bluish;
+    background-image: url(../../../assets/images/diversity_bg.png);
+    color: $white;
+
+    #wb-text-container{
+        background-image: url(../../../assets/images/exclamation_mark.svg);
+        background-size: 45%;
+        background-position: top right -20px;
+        background-repeat: no-repeat;
+        padding: 20px;
+
+        .wb-test-details{
+            padding: 40% 0 20% 0;
+
+            p{
+                margin: 0;
+                font-size: 40px;
+                font-family: $FONT-FAMILY-BOLD;
+                line-height: 1.3;
+            }
+
+            p.date{
+                text-transform: uppercase;
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    #notification-container{
+        background-color: $light-green;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+
+        .notif-detail-box-container{
+            padding: 35px 10px;
+        }
+
+        .notif-detail-box{
+            background-color: $white;
+            border-radius: 20px;
+            color: $black;
+            padding: 15px 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .urgent{
+            padding: 0;
+
+            .notif-header{
+                background-color: $bluish-darker;
+                border-top-right-radius: 15px;
+                border-top-left-radius: 15px;
+                padding: 10px 20px;
+                color: $white;
+                font-size: 18px;
+                font-family: $FONT-FAMILY-BOLD;
+                position: relative;
+                padding-left: 50px;
+            }
+
+            .notif-header:before{
+                content: '';
+                background-image: url(../../../assets/images/notification/mail.svg);
+                background-position: left;
+                background-repeat: no-repeat;
+                background-size: 20px;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 20px;
+            }
+
+            .notif-content{
+                padding: 10px 25px;
+                position: relative;
+                background-image: url(../../../assets/images/notification/right-arrow.svg);
+                background-size: 15px;
+                background-repeat: no-repeat;
+                background-position: bottom 20px right 20px;
+
+                p{
+                    color: $grey;
+                    line-height: 1.5;
+                    font-size: 17px;
+                    max-width: 265px;
+                }
+            }
+        }
+
+        .daily-notifs-container{
+            margin-top: 15px;
+            color: $black;
+
+            .daily-notif-content-container{
+                padding: 0 0 0 20px;
+
+                .noAction{
+                    background-color: rgba(0,0,0,0.35);
+                }
+            }
+
+            h2{
+                font-family: $FONT-FAMILY-BOLD;
+                padding: 0 25px;
+            }
+
+            .daily-notif{
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                padding: 15px 20px;
+                margin: 0 0 15px 0;
+            
+                .notif-content{
+                    position: relative;
+            
+                    h3{
+                        font-size: 17px;
+                        font-family: $FONT-FAMILY-BOLD;
+                        margin: 0;
+                        line-height: 1.5;
+                        color: $grey;
+                    }
+            
+                    label{
+                        color: $light-grey;
+                        line-height: 1.5;
+                    }
+            
+                    p{
+                        margin: 10px 0 0 0;
+                        line-height: 1.5;
+                        color: $grey;
+                    }
+            
+                    .action-badge{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        background-color: $red;
+                        color: $white;
+                        text-transform: uppercase;
+                        font-family: $FONT-FAMILY-BOLD;
+                        padding: 4px 10px;
+                        border-radius: 20px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .prev-date-notif-container{
+            padding-bottom: 20px;
+
+            h4{
+                text-transform: uppercase;
+                color: $disable-grey;
+                font-size: 12px;
+                padding: 20px 10px 10px 10px;
+            }
+        }
+
+        .notif-end{
+            padding-bottom: 20px;
+            text-align: center;
+            color: $disable-grey;
+        }
+    }
+
+}

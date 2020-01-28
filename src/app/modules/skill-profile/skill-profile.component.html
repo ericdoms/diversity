@@ -1,0 +1,20 @@
+<div id="skill-container">
+    <app-header></app-header>
+    <section class="inner-container">
+        <div class="back-btn"><img src="../../../assets/images/menu/back.svg"></div>
+        <div class="skill-content">
+            <h3>Welcome to</h3>
+            <h1>Diversity Works!</h1>
+            <div class="skill-video">
+                <video controls (click)="toggleVideo()" #videoPlayer>
+                    <source src="../../../assets/videos/skill-vid.mp4" type="video/mp4" />
+                    Browser not supported
+                </video>
+            </div>
+            <p>It’s important we have the best skills listed added to your profile to ensure the best outcome for a potential job prospect.</p>
+            <div class="next-btn btn">
+                <a>Next</a>
+            </div>
+        </div>
+    </section>
+</div>

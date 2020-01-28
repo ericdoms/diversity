@@ -1,0 +1,54 @@
+@import 'src/assets/scss/theme.scss';
+
+#review-container{
+    background-color: $bluish;
+    background-image: url(../../../assets/images/diversity_bg.png);
+    color: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    section{
+        position: relative;
+
+        .review-content{
+            padding: 20% 20px;
+            text-align: center;
+
+            .review-icon{
+                max-width: 95px;
+                max-height: 95px;
+                margin: auto;
+            }
+
+            h1{
+                font-family: $FONT-FAMILY-BOLD;
+                font-size: 32px;
+                margin: 30px 0 50px 0;
+            }
+
+            p{
+                font-size: 16px;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .btn-container {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        .done-btn{
+            background-color: $white;
+            margin: 20px;
+
+            a{
+                color: $bluish;
+            }
+        }
+    }
+}

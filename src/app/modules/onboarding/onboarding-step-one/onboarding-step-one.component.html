@@ -1,0 +1,55 @@
+<div id="onboarding-one-container">
+    <div class="withPadding profile-upload">
+        <h1>Tell us a little more about yourself</h1>
+        <div class="photo-placeholder">
+            <div class="user-photo">
+                <label>Add Photo</label>
+            </div>
+        </div>
+    </div>
+    <div class="withBorders">
+        <div class="withPadding question">
+            <h1>Gender</h1>
+            <div class="options">
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="male">Male</mat-radio-button>
+                    <mat-radio-button value="female">Female</mat-radio-button>
+                </mat-radio-group>
+            </div>
+        </div>
+    </div>
+    <div class="withBorders">
+        <div class="withPadding question">
+            <h1>Are you an Australian Citizen?</h1>
+            <div class="options">
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="yes">Yes</mat-radio-button>
+                    <mat-radio-button value="no">No</mat-radio-button>
+                </mat-radio-group>
+            </div>
+        </div>
+    </div>
+    <div class="withBorders">
+        <div class="withPadding question">
+            <h1>Attach your citizenship Certificate</h1>
+            <div class="upload-doc">
+                <p>Choose file</p>
+            </div>
+        </div>
+    </div>
+    <div class="withBorders">
+        <div class="withPadding question">
+            <h1>What is your date of birth?</h1>
+            <div class="dob">
+                <input matInput [matDatepicker]="picker" placeholder="Select Date" 
+                    (click)="picker.open()" 
+                    (focus)="picker.open()"
+                    readonly>
+                <mat-datepicker #picker></mat-datepicker>
+            </div>
+        </div>
+        <div class="action-btn withPadding">
+            <div class="btn"><a>Next</a></div>
+        </div>
+    </div>
+</div>

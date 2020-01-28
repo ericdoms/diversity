@@ -1,0 +1,76 @@
+@import 'src/assets/scss/theme.scss';
+
+#onboarding-one-container{
+    .profile-upload{
+        h1{
+            margin-top: 40px;
+            font-size: 24px;
+            text-align: center;
+            font-family: $FONT-FAMILY-BOLD;
+            max-width: 210px;
+            margin: auto;
+        }
+
+        .photo-placeholder{
+            text-align: center;
+
+            .user-photo{
+                width: 130px;
+                height: 130px;
+                background-image: url(../../../../assets/images/onboarding/placeholder.svg);
+                background-size: cover;
+                position: relative;
+                margin: 30px auto;
+
+                label{
+                    position: absolute;
+                    bottom: 5px;
+                    width: 100%;
+                    left: 0;
+                    padding: 5px 0;
+                    color: $white;
+                    border-radius: 20px;
+                    text-decoration: underline;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .upload-doc{
+        p{
+            position: relative;
+            padding-left: 25px;
+
+            &:before{
+                content: '';
+                background-image: url(../../../../assets/images/onboarding/add.svg);
+                background-repeat: no-repeat;
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                left: 0;;
+            }
+        }
+    }
+
+    .dob{
+        input{
+            padding: 15px;
+            border: 1px solid $bluish;
+            border-radius: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: $grey;
+        }
+    }
+
+    .action-btn{
+        margin-top: 50px;
+
+        a{
+            color: $bluish;
+        }
+    }
+}

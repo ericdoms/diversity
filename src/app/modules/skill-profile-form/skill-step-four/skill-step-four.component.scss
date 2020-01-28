@@ -1,0 +1,103 @@
+@import 'src/assets/scss/theme.scss';
+
+.occupation-list{
+    margin-top: 50px;
+
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li{
+            position: relative;
+            text-align: left;
+            padding: 20px;
+            border: 1px solid $border-grey;
+            border-radius: 10px;
+            margin-bottom: 20px;
+
+            div{
+                position: relative;
+
+                span{
+                    max-width: 30px;
+                    max-height: 30px;
+                    display: inline-block;
+                }
+
+                label{
+                    padding: 6px 0 0 40px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: $white;
+    border: 1px solid $border-grey;
+}
+  
+.container:hover input ~ .checkmark {
+    background-color: $white;
+    border: 1px solid $border-grey;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: $bluish;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid $white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

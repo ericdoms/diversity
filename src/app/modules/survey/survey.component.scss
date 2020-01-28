@@ -1,0 +1,48 @@
+@import 'src/assets/scss/theme.scss';
+
+#survey-container{
+    background-color: $green;
+    background-image: url(../../../assets/images/green_bg.png);
+    h1{
+        font-family: $FONT-FAMILY-BOLD;
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 10px 0 20px 0;
+    }
+
+    .mood{
+
+        .withPadding{
+            padding-bottom: 30px;
+        }
+
+        .emoticons{
+            background-color: $bluish;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 5px;
+            
+            div{
+                width: 33%;
+                text-align: center;
+                padding: 8px 0;
+
+
+                &:nth-child(2){
+                    border-right: 1px solid $white;
+                    border-left: 1px solid $white;
+                }
+
+
+                img{
+                    max-width: 30px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

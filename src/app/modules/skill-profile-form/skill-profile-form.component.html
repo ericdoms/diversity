@@ -1,0 +1,16 @@
+<div id="skill-profile-form-container">
+    <app-header menuHeader="Skills Profile"></app-header>
+    <section class="inner-container">
+        <div class="back-btn"><img src="../../../assets/images/menu/back.svg"></div>
+        <div class="skill-profile-form-content">
+            <app-stepper stepNumber={{step}}></app-stepper>
+            <form>
+                <div *ngIf="step === 1"><app-skill-step-one stepNumber="{{step}}" (newStepNumber)="setNewStepNumber($event)"></app-skill-step-one></div>
+                <div *ngIf="step === 2"><app-skill-step-three stepNumber="{{step}}" (newStepNumber)="setNewStepNumber($event)"></app-skill-step-three></div>
+                <div *ngIf="step === 3"><app-skill-step-four stepNumber="{{step}}" (newStepNumber)="setNewStepNumber($event)"></app-skill-step-four></div>
+                <div *ngIf="step === 4"><app-skill-step-five stepNumber="{{step}}" (newStepNumber)="setNewStepNumber($event)"></app-skill-step-five></div>
+            </form>
+        </div>
+        
+    </section>
+</div>

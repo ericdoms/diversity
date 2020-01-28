@@ -1,0 +1,42 @@
+@import 'src/assets/scss/theme.scss';
+
+#skill-container{
+    background-color: $purple;
+    background-image: url(../../../assets/images/purple_bg.png);
+    .inner-container{
+        padding: 20px;
+
+        .skill-content{
+            text-align: center;
+            margin-top: 20%;
+
+            h1{
+                margin: 0 0 5px 0;
+                font-size: 32px;
+                font-family: $FONT-FAMILY-BOLD;
+            }
+
+            h3{
+                color: $bluish;
+                margin: 0;
+                font-size: 15px;
+                font-family: $FONT-FAMILY-BOLD;
+            }
+
+            .skill-video{
+                margin: 20% 0;
+            }
+
+            p{
+                line-height: 1.5;
+                text-align: left;
+                color: $black;
+            }
+
+            .next-btn{
+                color: $bluish;
+                margin-top: 70px;
+            }
+        }
+    }
+}
